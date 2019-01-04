@@ -4,12 +4,14 @@ Dependency resolver is an application written in C which parses package dependen
 It uses the cJSON library by Dave Gamble which parses JSON formatted strings and the most recent version can be found at https://github.com/DaveGamble/cJSON
 
 It includes a makefile so to compile just run: 
+
 $ make
 
 Usage:
 dependency_resolver <filename> <jsonfile dependency>
 
 Example:
+
 $ ./dependency_resolver packages.pms A
 
 ["B", "F", "D", "G", "E"]
