@@ -1,0 +1,2 @@
+# dependency_resolver
+Dependency resolver is an application written in C which parses package dependencies from a .pms file which describes the dependencies in json format. I wrote it in 2016 as a task assignment for a job interview. In its current state it may or may not be of practical use but it can be easily modified. Feel free to use it or redistribute it as long as you keep the credits in the file and value my work as the original author. 
