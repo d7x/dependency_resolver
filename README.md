@@ -11,18 +11,29 @@ dependency_resolver <filename> <jsonfile dependency>
 
 Example:
 $ ./dependency_resolver packages.pms A
+
 ["B", "F", "D", "G", "E"]
   
 where <filename> is the json file containning the dependencies and the second parameter is which group to show the dependencies for
   
   The jsonfile is json data in the following format:
+  
 [
+
 {"name" : "A", "requires" : ["B", "D", "E"]},
+
 {"name" : "B", "requires" : ["F"]},
+
 {"name" : "C", "requires" : ["G", "H"]},
+
 {"name" : "D", "requires" : ["G"]},
+
 {"name" : "E", "requires" : []},
+
 {"name" : "F", "requires" : []},
+
 {"name" : "G", "requires" : []},
+
 {"name" : "H", "requires" : []}
+
 ]
